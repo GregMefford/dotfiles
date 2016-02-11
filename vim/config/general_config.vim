@@ -1,6 +1,6 @@
 " default color scheme
   set background=dark
-  color smyck
+  colorscheme solarized
   set t_Co=256
 
 " wrap long lines
@@ -81,7 +81,7 @@ set autoindent
   set list
 
 " have the mouse enabled all the time
-  set mouse=a
+  "set mouse=a
 
 " use tab-complete to see a list of possiblities when entering commands
   set wildmode=list:longest,full
