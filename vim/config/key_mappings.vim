@@ -26,14 +26,6 @@
 " reindent the entire file
   map <Leader>I gg=G``<cr>
 
-" disable arrow keys to make me use hjkl
-  nnoremap <up> <nop>
-  nnoremap <down> <nop>
-  nnoremap <left> <nop>
-  nnoremap <right> <nop>
-  nnoremap j gj
-  nnoremap k gk
-
 " quick search
   map <leader>s :%s/
 

@@ -21,7 +21,7 @@
   set smarttab
 
 " enable line numbers, and don't make them any wider than necessary
-  set relativenumber numberwidth=2
+  set number numberwidth=2
 
 " show the first match as search strings are typed
   set incsearch
@@ -39,7 +39,7 @@
   set hidden
 
 " match indentation of previous line
-set autoindent
+  set autoindent
 
 " perform autoindenting based on filetype plugin
   filetype plugin indent on
@@ -112,3 +112,11 @@ set autoindent
 
 " enable system clipboard
   set clipboard=unnamed
+
+" Better searching
+  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
+
+  map <C-p> :FZF<CR>
+  nnoremap <leader>f :FZF<CR>
+
+  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
