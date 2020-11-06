@@ -45,3 +45,7 @@
 " coffeelint
   map <leader>cl :CoffeeLint <Bar> botright cwindow<cr>
   map <leader>cc :cclose<cr>
+
+" Finding things
+  map <leader>f :FZF<cr>
+  map <leader>F :Find 

@@ -88,4 +88,13 @@ call vundle#end()
 " let g:syntastic_html_checkers=['']
 
 " ale
+  let g:ale_linters_explicit = 1
+  let g:ale_linters = {
+  \   'javascript': ['eslint'],
+  \   'elixir': ['credo', 'dogma', 'mix'],
+  \   'json': ['jsonlint'],
+  \   'markdown': ['markdownlint', 'write-good'],
+  \   'ruby': ['reek', 'rubocop', 'ruby'],
+  \   'vim': ['vint']
+  \}
   let g:ale_ruby_rubocop_options = '-c .ruby-style.yml'

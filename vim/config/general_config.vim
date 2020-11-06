@@ -18,7 +18,11 @@
 " use 2 spaces for tabs, and other file type settings
   set expandtab tabstop=2 softtabstop=2 shiftwidth=2
   au FileType markdown setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2 linebreak
+  au FileType make setlocal noexpandtab tabstop=8 softtabstop=0 shiftwidth=8
   set smarttab
+
+" Use a single space when automatically wrapping lines and joining sentences
+  set nojoinspaces
 
 " enable line numbers, and don't make them any wider than necessary
   set number numberwidth=2
@@ -111,7 +115,7 @@
   let vimclojure#ParenRainbow  = 1
 
 " enable system clipboard
-  set clipboard=unnamed
+"  set clipboard=unnamed
 
 " Better searching
   let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
