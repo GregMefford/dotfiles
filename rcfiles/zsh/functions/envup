@@ -1,0 +1,9 @@
+# Load .env file into shell session for environment variables
+
+function envup() {
+  set -o allexport
+  [[ -f .env ]] && source .env
+  [[ -f .env.local ]] && source .env.local
+  [[ -f .env.token.local ]] && source .env.token.local
+  set +o allexport
+}

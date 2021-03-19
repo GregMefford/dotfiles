@@ -1,0 +1,8 @@
+alias ll="ls -lah"
+alias gd="git diff"
+alias gcb="git checkout -b"
+alias gst="git status"
+alias gcan="git commit --amend --no-edit"
+alias gloga="git log --pretty=oneline --graph --decorate --all"
+alias glog="git log --graph --decorate"
+alias ggp="git pull --prune"
