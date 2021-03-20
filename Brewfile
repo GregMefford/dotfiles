@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/cask-fonts'
 
+brew 'ack'
 brew 'asdf'
 brew 'coreutils'
 brew 'ctags'

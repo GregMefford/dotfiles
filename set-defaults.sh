@@ -9,7 +9,6 @@
 sudo -v
 
 # Disable screensaver
-
 defaults -currentHost write com.apple.screensaver idleTime 0
 
 # Disable press-and-hold for keys in favor of key repeat.
@@ -22,7 +21,8 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 chflags nohidden ~/Library
 
 # Hella fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
